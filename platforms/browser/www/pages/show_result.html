@@ -1,0 +1,52 @@
+<script>
+    $.getScript(path + "js/show_result.js");
+
+</script>
+<div id="loader">
+    <img src="img/loader.gif" />
+</div>
+<header style="background:url('img/inner-bg.jpg') no-repeat top center #000; height: 160px; background-size:100% ">
+    <!--<div id="logo" style="background: url('img/logo.jpg') no-repeat top center">
+        <img src="img/logo.jpg" />
+    </div>-->
+    <div id="profile" style="background: url('img/profile.jpg') no-repeat top center" onclick="profile()">
+        <span id="profile_edit_btn">+</span>
+
+    </div>
+    <ul class="submenu">
+        <li onclick="logout()">LOGOUT</li>
+    </ul>
+    <div class="header-top-content text-center">
+
+        <p>
+            <span id="user_college"></span>
+            <br/>
+            <b id="user_name"></b>
+            <br/>
+            <span id="user_usn"></span>
+            <br/>
+            <span id="user_branch"></span>
+        </p>
+    </div>
+
+</header>
+<div class="col-12 shadow">
+    <div class="col-6 text-center tabs active_tab">
+        <h5 onclick="show_marks()">SHOW MARKS</h5>
+    </div>
+    <div class="col-6 text-center tabs ">
+        <h5 onClick="results()">RESULTS</h5>
+    </div>
+</div>
+<div class="col-12" id="show_marks">
+    <!-- lOOp -->
+
+    <!-- End loop-->
+</div>
+
+
+
+
+<!-- End Dummy -->
+<p class="br-clear"></p>
+<footer class="text-center" id="footer">&copy; 2018</footer>

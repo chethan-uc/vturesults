@@ -1,0 +1,56 @@
+<script>
+    $.getScript(path + "js/latest_results.js");
+
+</script>
+<div id="loader">
+    <img src="img/loader.gif" />
+</div>
+<header style="background:url('img/inner-bg.jpg') no-repeat top center #000; height: 160px; background-size:100% ">
+    <div id="logo" style="background: url('img/logo.jpg') no-repeat top center">
+        <!--<img src="img/logo.jpg" />-->
+    </div>
+    <div id="profile" style="background: url('img/profile.jpg') no-repeat top center" onclick="profile()">
+        <span id="profile_edit_btn">+</span>
+
+    </div>
+    <ul class="submenu">
+        <li onclick="logout()">LOGOUT</li>
+    </ul>
+    <div class="header-top-content text-center">
+
+        <p>KLE COLLEGE OF ENG. AND TECHNOLOGY CHIKODI
+            <br/>
+            <b>PATIL SACHIN SARJERAO</b>
+            <br/>2kd10me031
+            <br/> Mechanical Engineering</p>
+    </div>
+
+</header>
+<div class="col-12 shadow">
+    <div class="col-6 text-center tabs">
+        <h5 onclick="results()">RESULTS</h5>
+    </div>
+    <div class="col-6 text-center tabs active_tab">
+        <h5 onClick="get_latest_results()">GET LATEST RESULT</h5>
+    </div>
+</div>
+<!-- lOOp -->
+<div class="col-12 border-bottom padding-div">
+
+    <div class="col-3 text-center">
+        <img src="img/book.png" />
+    </div>
+    <div class="col-6">
+        <p>
+            <b>SEMESTER 1 - PASS</b>
+            <br/>Attempt : 2 , Total : 132</p>
+    </div>
+    <div class="col-3 text-center">
+        <img src="img/next.png" onclick="show_marks()" />
+    </div>
+</div>
+<!-- End loop-->
+
+
+<p class="br-clear"></p>
+<footer class="text-center" id="footer">&copy; 2018</footer>
