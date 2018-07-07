@@ -1,7 +1,7 @@
 var currentPage = {};
 var pageParam = [];
 var path = "";
-function login_page(){
+function search_usn(){
     $("body").load(path + "pages/login.html", function () {
         $.getScript(path + "js/login.js", function () {
             if (currentPage.init) {
@@ -20,7 +20,7 @@ function results() {
             });
         });
     } else {
-        login_page();
+        search_usn();
     }
 }
 function init() {
@@ -51,7 +51,7 @@ function get_latest_results() {
             }
         });
     }else{
-        login_page();
+        search_usn();
     }
 }
 
