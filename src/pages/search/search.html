@@ -1,0 +1,16 @@
+<ion-content padding class="appBackground">
+  <ion-card>
+    <ion-card-header>
+      Search
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label stacked>USN</ion-label>
+          <ion-input type="text" [(ngModel)]="userData.usn"></ion-input>
+        </ion-item>
+        <button ion-button full color="success" (click)="search()">Search</button>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
