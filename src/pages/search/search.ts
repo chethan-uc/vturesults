@@ -11,15 +11,14 @@ export class SearchPage {
   responseData : any;
   userData = {"usn": ""};
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, 
-    private apiService: ApiServiceProvider) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, ) {
 
   }
   ionViewDidLoad() {
     console.log('ionViewDidLoad SearchPage');
   }
 
-  public search(){
+  public search(){ 
     console.log(this.userData.usn);
   }
 

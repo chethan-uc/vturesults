@@ -8,11 +8,7 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class ApiServiceProvider {
-  
-
   constructor(private http: HttpClient) {
     console.log('Hello ApiServiceProvider Provider');
-    
-    
   }
 }

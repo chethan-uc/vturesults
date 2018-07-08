@@ -15,7 +15,6 @@ import { SearchPage } from '../pages/search/search'
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { AuthServiceProvider } from '../providers/auth-service/auth-service';
 import { ApiServiceProvider } from '../providers/api-service/api-service';
 
 @NgModule({
@@ -51,7 +50,6 @@ import { ApiServiceProvider } from '../providers/api-service/api-service';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    AuthServiceProvider,
     ApiServiceProvider
   ]
 })
